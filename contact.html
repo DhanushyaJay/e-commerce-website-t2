@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trial Mirror</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="ecom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <h1>TRAIL MIRROR</h1>
+        <!--navbar-->
+        <div class="navbar-links">
+            <p><a href="ecom.html" class="navbar-link">Home</a></p>
+            <p><a href="collection.html" class="navbar-link">Collections</a></p>
+            <p><a href="contact.html" class="navbar-link">Contact</a></p>
+        </div>
+        <div class="navbar-menu-toggle">
+            <i class="fa-solid fa-bars" onclick="opennavbar()"></i>
+        </div>
+    </nav>
+    <!--side-navbar-->
+    <div class="side-navbar">
+        <p><i class="fa-solid fa-xmark" id="icon" onclick="closenavbar()"></i></p>
+        <p><a href="ecom.html" class="side-navbar-link">Home</a></p>
+        <p><a href="collection.html" class="side-navbar-link">Collections</a></p>
+        <p><a href="contact.html" class="side-navbar-link">Contact</a></p>
+    </div>
+    <!-- contact -->
+    <div class="contact">
+        <h1 class="h1">Contact us</h1>
+        <div class="contact-box">
+            <label>Name</label>
+            <input type="text" id="name" placeholder="Enter your name">
+            <label>Email id</label>
+            <input type="text" id="emailid" placeholder="Enter your Mail id">
+            <label>Message</label>
+            <input type="text" id="message" placeholder="Enter the message">
+            <button type="submit" class="btn">submit</button>
+        </div>
+    </div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+        <h2>Trial Mirror</h2>
+        <p>You be trendy ever!</p>
+        <div class="footicons">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+        </div>
+        <p>@2024 Trial Mirror.com</p>
+    </div>
+    <script src="collection.js"></script>
+    <script>
+
+        var contactbtn = document.querySelector(".btn");
+        function submit() {
+            contactbtn.style.backgroundColor = "green";
+        }
+        contactbtn.addEventListener("click", submit);
+    </script>
+
+</body>
+
+</html>
